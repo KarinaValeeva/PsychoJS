@@ -1,0 +1,244 @@
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* background-image: url(../images/ideal.jpg); */
+  background-size: 1440px;
+  background-repeat: no-repeat;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  padding: 10px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  color: #000000
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+:focus {
+    outline-color: #4A90E2;
+}
+
+
+.newitem-title-wrapper {
+  margin: 4px 10px;
+}
+
+#trello-list-title-input {
+  width: 100%;
+  height: 22px;
+  margin-bottom: 5px;
+  border: none;
+  box-shadow: none;
+}
+
+.list {
+  background: #F4F4F4;
+  /* border-radius: 0px; */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 270px;
+  -ms-flex: 0 0 270px;
+  flex: 0 0 252px;
+  margin: 0 5px;
+  max-height: 100%;
+  position: relative;
+  width: 252px;
+  max-width: 252px;
+  cursor: pointer;
+}
+
+.list-title {
+  min-height: 17px;
+  padding: 15px 34px 15px 15px;
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.list-cards {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 4px;
+  padding: 0 4px;
+}
+
+.trello-new-card-title-input {
+  width: 100%;
+  margin-bottom: 4px;
+  overflow: hidden;
+  word-wrap: break-word;
+  resize: none;
+  height: 54px;
+  border: none;
+  box-shadow: none;
+  font-size: 17px;
+}
+
+.card {
+  background-color: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  max-width: 300px;
+  min-height: 20px;
+  position: relative;
+  overflow: auto;
+  padding: 10px 8px 10px;
+  font-size: 17px;
+}
+
+.card div {
+  color: #9B9B9B;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+#card-edit {
+  display: none;
+  position: absolute;
+  width: 600px;
+  z-index: 15;
+  top: 50px;
+  left: 50%;
+  margin: 0px 0 0 -300px;
+  padding: 50px;
+  border-radius: 2px;
+  background-color: #F4F4F4;
+  font-size: 17px;
+}
+
+#card-edit div {
+  margin-bottom: 10px;
+}
+
+#card-edit label {
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+}
+
+#card-edit-inputs input {
+  width: 300px;
+}
+
+#card-edit-close {
+  float: right;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+
+#container-main {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 10;
+}
+
+
+#card-edit-close img {
+  width: 20px;
+  height: 20px;
+}
+
+#card-edit-delete {
+  float: left;
+  width: 70px;
+  height: 20px;
+  background-color: #7B1401;
+  color: #fff;
+  margin-top: 30px;
+}
+
+#card-edit-submit {
+  float: right;
+  width: 70px;
+  height: 20px;
+  background-color: #5AA3F2;
+  color: #fff;
+  margin-top: 30px;
+}
+
+#trello-title-board {
+  padding: 10px 8px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f6f6f6;
+  font-weight: bold;
+}
+
+#trello-canvas-board {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
